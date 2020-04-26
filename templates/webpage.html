@@ -1,0 +1,303 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GLOB TOUR|HOME</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+            <link href='https://fonts.googleapis.com/css?family=Italiana' rel='stylesheet'>
+            <link href='https://fonts.googleapis.com/css?family=Pattaya' rel='stylesheet'>
+            <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet'>
+            <link href='https://fonts.googleapis.com/css?family=Ovo' rel='stylesheet'>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="" class="w3-bar-item w3-button">Kryefaqja</a>
+      <a href="/about/" class="w3-bar-item w3-button">Rreth nesh</a>
+      <a href="#bottom" class="w3-bar-item w3-button">Kontakt</a>
+    </div>
+      <div class="w3-display-middle w3-margin-top w3-center">
+
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min">  <img src="{% static 'img/download.png' %}" width="70px" height="70px" style="margin-left: -16px; margin-bottom:13px;"><b>GLOB TOUR </b></span> </h1>
+  </div>
+  </div>
+</div>
+
+
+ <!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width: 1550px;" id="home">
+  <img class="w3-image" src="{% static 'img/kurs.jpg' %}" alt="View" width="1550" height="400">
+
+
+</header>
+
+<br>
+
+
+<div class="container">
+
+<a name="turet"></a>
+<h1 style="font-family: 'Italiana';margin-top: 50px;"><strong>Zgjidh nje nga turet qe ne ofrojme</strong></h1>
+                       
+<br>
+
+<div class="row">
+	{% for i in tours %}
+  <div class="col-md-4">
+	    
+      <a href="static/linke/stamboll.pdf" target="_blank"><img src="{{ i.foto.url }}" style="width: 90%;height: 350px;box-shadow: 10px 10px 5px black;border-radius: 0 0 50px 0; class="image""></a>
+		  <div class="overlay" style="width: 90%;">
+    <div class="text" >{{ i.title }}
+	<h5 >{{ i.dataNisjes }}</h5>
+	<p >{{ i.cmimi }}</p>
+	
+
+	</div>
+
+  </div>
+ 
+
+
+
+	</div>
+
+{% endfor %}
+
+
+</div>
+
+
+	
+	
+	
+
+
+  
+  
+
+
+<h1 style="font-family: 'Italiana'"><strong>Turet me te preferuara</strong></h1>
+<br>
+
+
+
+    <div class="row text-center">
+{% for i in favtours %}
+      <div class="col-md-3">
+        <div class="thumbnail" style="border-radius: 0 0 50px 0;">
+          <img src="{{ i.foto.url }}"alt="SHBA" width="400" height="300" style="border-radius: 0 0 50px 0;">
+          <p><strong>{{i.title}}</strong></p>
+          <p>{{ i.pershkrim }}</p>
+            <a href="#bottom"><button class="btn" data-toggle="modal" data-target="#myModal">Rezervo</button></a>
+        </div>
+      </div>
+{#      <div class="col-md-3">#}
+{#        <div class="thumbnail" style="border-radius: 0 0 50px 0;">#}
+{#          <img src="{{ i.foto.url }}" alt="Japan" width="400" height="300" style="border-radius:0 0 50px 0;">#}
+{#          <p><strong>Vietnami</strong></p>#}
+{#          <p>Vietnami është një nga vendet më të bukura të Azisë Juglindore, ajo tërheq udhëtarët e panumert në malet e tij të harlisur, qytetet e mrekullueshme dhe plazhet me rërë të artë.</p>#}
+{#            <a href="#bottom"><button class="btn" data-toggle="modal" data-target="#myModal">Rezervo</button></a>#}
+{##}
+{##}
+{##}
+{#        </div>#}
+{#      </div>#}
+{#      <div class="col-md-3">#}
+{#        <div class="thumbnail" style="border-radius: 0 0 50px 0;">#}
+{#          <img src="{{ i.foto.url }}" alt="Praga" width="400" height="300" style="border-radius: 0 0 50px 0;">#}
+{#          <p><strong>Praga</strong></p>#}
+{#          <p>30 vite me pare Praga ishte nje mister per udhetaret. Ne ditet e sotme po behet nje nga destinacionet me popullore te Europes, duke terhequr me shume se 4 milione vizitore cdo vit.</p>#}
+{#            <a href="#bottom"><button class="btn" data-toggle="modal" data-target="#myModal">Rezervo</button></a>#}
+{#        </div>#}
+{#      </div>#}
+{##}
+{#        <div class="col-md-3">#}
+{#        <div class="thumbnail" style="border-radius: 0 0 50px 0;">#}
+{#          <img src="{{ i.foto.url }}" alt="Sharm el Sheikh" width="400" height="300" style="border-radius: 0 0 50px 0;">#}
+{#          <p><strong>Sharm el Sheikh</strong></p>#}
+{#          <p>Sharm siç dihet është bërë një nga destinacionet kryesore#}
+{#             turistike të Egjiptit si ne Verë edhe ne Dimër,#}
+{#             në sajë të Resorteve të saj luksoze#}
+{#            edhe plazheve të mrekullueshme</p>#}
+{#            <a href="#bottom"><button class="btn" data-toggle="modal" data-target="#myModal">Rezervo</button></a>#}
+{#        </div>#}
+{#      </div>#}
+{#    </div>#}
+{% endfor %}
+  </div>
+
+
+</div>
+<a name="bottom"></a>
+<div class="container2 text-center bg-grey" >
+  <h2 class="text-center" style="color: #000;font-size: 30px;">Na kontaktoni</h2>
+  <div class="row">
+
+    <div class="col-sm-5">
+      <p>Na shkruani dhe ne do t'ju pergjigjemi brenda 24 oreve.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> <a href="https://www.google.com/maps/place/ALPHA+BANK+ALBANIA+Dega+Elbasan/@41.2212998,19.4993312,9z/data=!4m8!1m2!2m1!1salpha+bank!3m4!1s0x13504253b83ac773:0x7e513ce947cd4bfb!8m2!3d41.1119704!4d20.0844959" target="_blank" style="color: #000;">Elbasan,Albania</a></p>
+      <p><span class="glyphicon glyphicon-phone"></span><a href="tel:+355692200287" target="_blank" style="color: #000;font-size: 15px;"> +355692200287</a></p>
+      <p><span class="glyphicon glyphicon-envelope"></span> globtour@hotmail.com</p>
+    </div>
+    <form method="POST" action="/save-message/">
+          {% csrf_token %}
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Emri" type="text" required>
+        </div>
+          <div class="col-sm-6 form-group">
+          <input class="form-control" id="lname" name="lname" placeholder="Mbiemri" type="text" required>
+        </div>
+
+
+      </div>
+
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required><br>
+
+
+        <select class="form-control" id="zgjidh" name="zgjidh">
+            <option>Tour ne Portugali</option>
+            <option>Tour ne Barcelone</option>
+            <option>Tour ne Rusi</option>
+            <option>Tour ne Tajlande</option>
+            <option>Tour ne Danimarke</option>
+            <option>Tour ne Stockholm</option>
+            <option>Tour ne SHBA/option>
+            <option>Tour ne Prage</option>
+            <option>Tour ne Vietnam</option>
+            <option>Sharm el Sheikh</option>
+
+        </select><br>
+
+
+          <input class="form-control" id="tel" name="tel" placeholder="Celular" type="text" required><br>
+          <textarea class="form-control" id="comments" name="comments" placeholder="Mesazhi" rows="5" required></textarea><br>
+
+          <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default" style="width: 50%;" type="submit">DERGO</button>
+        </div>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+
+
+
+<div style= "color: white;" class="copyright container">
+    Copyright &copy; 2020|GlobTour.al
+    All right reserved.
+ 
+
+</div>
+
+
+
+
+
+</div> <!--EKETU MBYLLET CONTAINER-->
+  <script>
+  $( document ).ready(function(){
+  $( ".col-md-4" ).hover(function(){
+  		$(this).children('div').css("opacity","1")
+  });
+
+
+
+
+
+ $( ".col-md-4" ).mouseleave(function(){
+
+  $(this).children('div').css("opacity","0");
+  });
+  });
+
+
+
+ /*$(document).ready(function(){
+  $("#flip").hover(function(){
+     $("#panel").slideToggle("slow");
+  });
+});*/
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Forma 
+<div class="forma">
+<div class="col-md-6">
+<form style="height: 100px;">
+<label>Emri*</label><br>
+<input type="text" id="txt"></input><br><br>
+
+<label>Email*</label><br>
+<input type="text" id="email"></input><br><br>
+
+<label>Shteti*</label><br>
+<select name="myselect"id="Myid">
+<option>Italy</option>
+<option>Greece</option>
+<option>Prague</option>
+<option>Egypt</option>
+<option>Germany</option>
+<option>Austria</option>
+<option>Japan</option>
+<option>US</option>
+
+</select><br><br>
+
+<label>Te rritur*</label><br>
+<select name="select" id="Myidd">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+</select><br><br>
+
+
+<label>Data*</label><br>
+<input type="date" id="data"><br><br>
+
+<label>Telefon</label><br>
+<input type="tel" id="tel"></input><br><br>
+
+</form>
+</div>ketu mbylle divi i forme-->

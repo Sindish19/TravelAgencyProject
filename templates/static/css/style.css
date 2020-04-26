@@ -1,0 +1,483 @@
+body{
+
+    background: #fff;
+   font-family: Ovo;
+
+  }
+
+
+h1{
+	color: #28b485;
+  font-family: Italiana;
+}
+
+
+.copyright{
+  position: absolute;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 0.25em;
+  color:white; 
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  background-color: black;
+  opacity: 0.6;
+  margin-left: 200px;
+}
+
+
+
+
+.text {
+  background-color: #28b4858f;
+  color: #fff;
+  font-size: 16px;
+  padding: 16px 32px;
+  position:relative;
+  border-radius: 0 0 50px 0;
+ 
+}
+
+
+.image {
+
+  position:absolute;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+
+
+}
+
+
+.overlay {
+  top: -134px;
+  bottom:0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  position:relative;
+  
+  
+  
+}
+
+
+label{
+	color:white;
+}
+
+
+
+
+.container2.text-center{
+  background-color: #f6f6f6;
+  color: #fff;
+  margin: 170px;
+
+}
+.container2{
+  background-image: url('../Img/elbasan.png');
+  
+ }
+
+.container2.text-center p{
+  color: #000;
+  font-size:18px;
+}
+.col-sm-7{
+  width: 618px;
+}
+.text-center{
+  padding-top: 9px;
+}
+
+
+
+
+
+
+
+/* ketu fillon style i aboutus*/
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+.primary{
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+   
+
+}
+#contact{
+  display: block;
+    font-size: 3em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin:-6px;
+    padding:33px;
+
+}
+
+.primary-main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+ 
+   
+     
+}
+.primary-main:hover {
+  
+transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0,0,0,0.2);
+    color: #fff;
+     transition: all .2s;
+   
+}
+
+.primary-sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    
+ 
+}
+.primary-sub:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0,0,0,0.2);
+    color: #fff;
+transition: all .2s;
+}
+.btn, .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+    background-color: #ff7403;
+    color: #fff;
+    
+  }
+
+    .btn-animated {
+    
+    animation: moveInBottom .5s ease-out .75s;
+    
+    animation-fill-mode: backwards;
+     background-color: #ff7403;
+    color: #fff;
+    padding-top: 30px;
+    
+   }
+
+    
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.7);
+    background-color: #28b485;
+    color: #fff;
+}
+
+.btn:active, .btn:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);}
+
+
+ 
+
+.u-center-text {
+    text-align: center !important;
+
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+
+   
+
+    color: #fff;
+    letter-spacing: 2px;
+    transition: all .2s;
+    
+}
+
+.heading-secondary:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0,0,0,0.2);
+    color: #fff;
+   
+}
+.u-margin-bottom-big {
+    margin-bottom: 5rem !important;
+  margin: -248px;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+.feature-box {
+    background-color:#5d8989;
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.15);
+    transition: transform .3s;
+    color: #fff;
+}
+
+
+
+.feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+}
+
+.u-margin-bottom-small {
+    margin-bottom: 1.5rem !important;
+}
+.heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin:-1px;
+
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+
+
+#myVideo {
+
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 151px;
+
+  box-sizing: border-box;
+
+ }
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: absolute;
+  bottom: -683px;
+  background:#ff7403;
+  color: #fff;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+margin-left: 340px;
+width: 649px;
+height: 57px;
+margin-bottom: 50px;
+
+
+}
+
+.icon-bar {
+  position: fixed;
+  top: 70%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin:-190px;
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+.instagram
+{
+   background:  #dd4b39;
+  color: white;
+}
+.email
+{
+  background:#007bb5;
+  color: white;
+}
+
+
+.w3-top {
+    top: -6px;
+    line-height: 1.5;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    font-size: 18px;
+
+}
+
+.w3-white, .w3-hover-white:hover {
+    color: #fff!important;
+    background-color:#ff740300!important;
+    font-size: 20px;
+}
+
+
+.w3-bar {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.w3-btn, .w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.w3-button:hover {
+    color: #000!important;
+    background-color: #fff!important;
+    text-decoration: none;
+    border-radius: 15px;
+  }
+.w3-right {
+    float: right!important;
+
+}
+
+.w3-tooltip, .w3-display-container {
+    position: relative;
+}
+.w3-wide {
+    letter-spacing: 4px;
+}
+.w3-image {
+    max-width: 100%;
+    height: auto;
+   
+
+}
+
+.w3-margin-top {
+    margin-top: 16px!important;
+}
+.w3-center {
+    text-align: center!important;
+}
+.w3-display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+.w3-text-white, .w3-hover-text-white:hover {
+    color: #fff!important;
+}
+.w3-xxlarge {
+    font-size: 50px!important;
+    margin-left: -1147px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}.w3-black, .w3-hover-black:hover {
+    color: #fff!important;
+    background-color: #00000080;!important;
+    width: 10px;
+    border-radius:  0  0 50px 0 ;
+    font-family: Italiana;
+}
+.w3-padding {
+    padding: 8px 16px!important;
+
+}
+.w3-opacity-min {
+    opacity: 0.75;
+}
+
+
